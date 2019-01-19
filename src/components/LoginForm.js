@@ -21,7 +21,7 @@ class LoginForm extends Component{
    this.setState({ error: 'Authentication Failed', loading: false });
  }
 
- onLoginSuccess() {
+ onLoginSuccess() { //clear email and password in case of success
    this.setState({
      email: '',
      password: '',
